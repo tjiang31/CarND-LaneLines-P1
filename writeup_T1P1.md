@@ -20,7 +20,10 @@ The goals / steps of this project are the following:
 [image4]: ./test_images/detected_solidYellowCurve2.jpg "SYC2"
 [image5]: ./test_images/detected_solidYellowLeft.jpg "SYL"
 [image6]: ./test_images/detected_whiteCarLaneSwitch.jpg "WCLS"
-[image7]: ./examples/grayscale.jpg "gray"
+[image7]: ./test_images/frame100.jpg "frame"
+[image8]: ./test_images/frame100Gray.jpg "gray"
+[image9]: ./test_images/frame100Filtered.jpg "filter"
+[image10]: ./test_images/frame100FilteredGray.jpg "filtergray"
 
 ---
 
@@ -30,9 +33,13 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function
 
-1.1 Determine if the image need addtional color filtering/extraction with the , this is especially useful for the **Optional Challenge**, as shown in 
+1.1 Determine if the image need addtional color filtering/extraction with the _**colorExt(image)**_ function, this is especially useful for the **Optional Challenge**. 
 
-1.2 Convert the images to grayscale, as shown in the example:
+Shown below (From left to right: Raw image; unfilted grayscale; Filtered RGB; Filtered grayscale)
+
+![image7] ![image8] ![image9] ![image10]
+
+1.2 Convert the images to grayscale, as shown in the example.
 
 ![image7]
 
