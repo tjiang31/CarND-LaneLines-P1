@@ -72,7 +72,7 @@ One potential shortcoming would be the case when faced a T-intersection or sharp
 Another shortcoming could be the capability of dealing with night and narrow street scenarios, becasue in these two cases, the edges and layers are heavily contamenated by the background/near by objects, and since the parameters are mostly pre-determined, that will make the pipeline unable to adapt the complicated cases.
 
 
-###3. Suggest possible improvements to your pipeline
+###3. Possible improvements to the pipeline
 
 A possible improvement would be add addition ratio parameters to make the model automatically normalize the image to filter out the background objects.
 
