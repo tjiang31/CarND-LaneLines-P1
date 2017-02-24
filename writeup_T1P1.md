@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 
 ###1. Description of the pipeline.
 
-My pipeline consisted of 5 steps and they are encapsulated into the **laneFinding(image, colorFilter=0)** function
+My pipeline consisted of 5 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function
 
 1.1 Determine if the image need addtional color filtering/extraction with the , this is especially useful for the **Optional Challenge**
 
