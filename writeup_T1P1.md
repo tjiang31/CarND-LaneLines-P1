@@ -12,12 +12,12 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-[image1]: ./test-images/detected_solidWhiteCurve.jpg "SWC"
-[image2]: ./test-images/detected_solidWhiteRight.jpg "SWR"
-[image3]: ./test-images/detected_solidYellowCurve.jpg "SYC"
-[image4]: ./test-images/detected_solidYellowCurve2.jpg "SYC2"
-[image5]: ./test-images/detected_solidYellowLeft.jpg "SYL"
-[image6]: ./test-images/detected_whiteCarLaneSwitch.jpg "WCLS"
+[image1]: ./test_images/detected_solidWhiteCurve.jpg "SWC"
+[image2]: ./test_images/detected_solidWhiteRight.jpg "SWR"
+[image3]: ./test_images/detected_solidYellowCurve.jpg "SYC"
+[image4]: ./test_images/detected_solidYellowCurve2.jpg "SYC2"
+[image5]: ./test_images/detected_solidYellowLeft.jpg "SYL"
+[image6]: ./test_images/detected_whiteCarLaneSwitch.jpg "WCLS"
 
 ---
 
