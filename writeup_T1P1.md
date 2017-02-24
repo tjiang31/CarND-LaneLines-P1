@@ -40,11 +40,7 @@ Shown below (From top to bottom: Raw image; unfilted grayscale; Filtered RGB; Fi
 ![image7] ![image8] ![image9] ![image10]
 
 
-1.2 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![image0]
+1.2 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by add 
 
 
 ###2. Identify potential shortcomings with your current pipeline
