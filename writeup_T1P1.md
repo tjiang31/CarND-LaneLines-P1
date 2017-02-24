@@ -32,7 +32,7 @@ The goals / steps of this project are the following:
 
 ###1. Description of the pipeline.
 
-My pipeline consisted of 5 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function
+My pipeline consisted of 6 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function.
 
 1.1 Determine if the image need addtional color filtering/extraction with the _**colorExt(image)**_ function, this is especially useful for the **Optional Challenge**. Then, the image is being converted to grayscale.
 
@@ -69,11 +69,13 @@ The final annotated test-images, plus one frame from the challenge video are sho
 
 One potential shortcoming would be the case when faced a T-intersection or sharp turn, due to the slope constraint we added in determining the left/right lanes, it will make the annotated lines keeping forward.
 
-Another shortcoming could be 
+Another shortcoming could be the capability of dealing with night and narrow street scenarios, becasue in these two cases, the edges and layers are heavily contamenated by the background/near by objects, and since the parameters are mostly pre-determined, that will make the pipeline unable to adapt the complicated cases.
 
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be add addition ratio parameters to make the model automatically normalize the image to filter out the background objects.
 
-Another potential improvement could be to ...
+Another potential improvement could be using a higher order slope to capture the turning of the slope. \
+
+Thanks!
