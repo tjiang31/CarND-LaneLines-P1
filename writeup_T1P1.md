@@ -33,15 +33,12 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function
 
-1.1 Determine if the image need addtional color filtering/extraction with the _**colorExt(image)**_ function, this is especially useful for the **Optional Challenge**. 
+1.1 Determine if the image need addtional color filtering/extraction with the _**colorExt(image)**_ function, this is especially useful for the **Optional Challenge**. Then, the image is being converted to grayscale.
 
-Shown below (From left to right: Raw image; unfilted grayscale; Filtered RGB; Filtered grayscale)
+Shown below (From top to bottom: Raw image; unfilted grayscale; Filtered RGB; Filtered grayscale)
 
 ![image7] ![image8] ![image9] ![image10]
 
-1.2 Convert the images to grayscale, as shown in the example.
-
-![image7]
 
 1.2 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
