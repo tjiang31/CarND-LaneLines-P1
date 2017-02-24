@@ -30,9 +30,9 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps and they are encapsulated into the _**laneFinding(image, colorFilter=0)**_ function
 
-1.1 Determine if the image need addtional color filtering/extraction with the , this is especially useful for the **Optional Challenge**
+1.1 Determine if the image need addtional color filtering/extraction with the , this is especially useful for the **Optional Challenge**, as shown in 
 
-1.1 Convert the images to grayscale, as shown in the example:
+1.2 Convert the images to grayscale, as shown in the example:
 
 ![image7]
 
