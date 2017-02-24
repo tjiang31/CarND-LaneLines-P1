@@ -41,7 +41,7 @@ My pipeline consisted of 5 steps and they are encapsulated into the _**laneFindi
 ![image7] ![image8] ![image9] ![image10]
 
 
-1.2 The region of interest is also tuned with the test image, but to make these parameters more adaptive to different resolution, it is being converted to ratio factors time by the image.shape (the x-y range of the image). 
+1.2 The region of interest is also tuned with the test image, but to make these parameters more adaptive to different resolution, it is being converted to ratio factors time by the image.shape (the [x, y] range of the image). 
 
   Same logic is also used in the draw_lines() when the annotation lanes need to be computed from the fitted slope, the two ends points (y component) are also determined by only considering the bottom 1/3 of the frame.
   
@@ -49,18 +49,27 @@ My pipeline consisted of 5 steps and they are encapsulated into the _**laneFindi
   
 ![image0]
 
-1.3 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by using a grouping method based on the slope (positive/negative) of the detected edges. Addtional constraint of 20^o - 45^o is also used to filter out segment of noise. The final annotated test-images, plus one frame from the challenge video are shown below.
+1.3 Detect the line with _**Canny()**_ function with lower/upper threshold = 1:3 (50:150)
+
+1.4 The parameters for the Hough-Transform are tuned to cover the case in **Optional Challenge** (e.g., smaller minimum length/gap)
+
+1.5 In order to draw a single line on the left and right lanes, I modified the _**draw_lines()**_ function by using a grouping method based on the slope (positive/negative) of the detected edges. Addtional constraint of 20^o - 45^o is also used to filter out segment of noise. 
+
+1.6 Finally, the addWeighted function is used to combine the lines with the raw image/frame.
+
+
+The final annotated test-images, plus one frame from the challenge video are shown below.
 
 ![image1] ![image2] ![image3] ![image4] ![image5] ![image6]
 
 ![image11]
 
-###2. Identify potential shortcomings with your current pipeline
+###2. Potential shortcomings with current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be the case when faced a T-intersection or sharp turn, due to the slope constraint we added in determining the left/right lanes, it will make the annotated lines keeping forward.
 
-Another shortcoming could be ...
+Another shortcoming could be 
 
 
 ###3. Suggest possible improvements to your pipeline
